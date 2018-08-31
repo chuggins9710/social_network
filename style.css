@@ -1,0 +1,445 @@
+*{
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+}
+
+html{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Navigation bar */
+
+header {
+	background-color: #3b5998;
+	padding: 0px;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+	list-style-type: none;
+	font-weight: 300;
+}
+
+.logo{
+	display: inline-block;
+	width: 20%;
+}
+
+.logo a{
+	font-size: 25px;
+}
+
+.logo i{
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+.nav-left{
+	display: inline-block;
+	width: 20%;
+	border-right: 1px solid rgba(255, 255, 255, .3);
+	text-align: right;
+	padding-right: 20px;
+}
+
+.nav-left ul li {
+	display: inline-block;
+}
+
+.nav-left a{
+	margin-right: 20px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.nav-left a:hover{
+	font-size: 16px;
+}
+
+.nav-icons{
+	display: inline-block;
+	width: 20%;
+	padding-left: 25px;
+	border-right: 1px solid rgba(255, 255, 255, .3);
+	font-size: 16px;
+}
+
+.nav-icons a:hover{
+	font-size: 18px;
+}
+
+.nav-icons ul{
+	margin: 0;
+}
+
+.nav-icons ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+.logout{
+	display: inline-block;
+}
+
+.logout li{
+	list-style-type: none;
+}
+
+.logout a:hover{
+	font-size: 18px;
+}
+
+.logout ul{
+	margin: 0;
+}
+
+.lock ul li{
+	display: inline-block;
+	list-style-type: none;
+}
+
+.search{
+	display: inline-block;
+	float: right;
+	width: 33%;
+	text-align: right;
+}
+
+.search ul{
+	padding: 0;
+	margin: 0;
+}
+
+.search ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin: 13px 10px 0 0;
+}
+
+.search input{
+	border: 0 solid #fff;
+	background-color: #3b5998;
+	color: white;
+	border-bottom: 1px solid white;
+	width: 100%;
+}
+
+.search input:focus{
+	outline: none;
+}
+
+/* Top Area */
+#top-area{
+	background: url(https://picjumbo.com/wp-content/uploads/sunset-evening-over-the-san-francisco-cityscape_free_stock_photos_picjumbo_HNCK4138-2210x1474.jpg) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 200px 25px 90px 25px;
+}
+
+.user-image{
+	padding: 10px;
+	display: inline-block;
+}
+
+.user-image img{
+	border-radius: 50%;
+}
+
+.user-details{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 10px;
+}
+
+.user-details h3{
+	color: white;
+	font-size: 24px;
+	font-weight: 300;
+	font-style: sans-serif;
+	margin-bottom: 10px;
+}
+
+.user-details button{
+	background-color: rgba(129, 132, 148, .7);
+	display: inline-block;
+	text-transform: uppercase;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 3px;
+	border: none;
+	padding: 10px;
+	font-weight: 700;
+	margin-right: 10px
+}
+
+.user-details button:hover{
+	cursor: pointer;
+	background-color: rgba(63, 226, 244, .9);
+	transition: background .4s ease-in-out;
+	transform: scale(1.1);
+}
+
+/* Side Column */
+
+#content-area{
+	background: #FAFAFA;
+	overflow: auto;
+	padding: 50px 0;
+}
+
+.side-column{
+	float: left;
+	width: 35%;
+	margin: 0 2.5%;
+	max-width: 380px;
+}
+
+.main-area{
+	width: 55%;
+	margin: 0 2.5%;
+	float: left;
+}
+
+.widget-box{
+	padding: 15px;
+	background: white;
+	-webkit-box-shadow: 0px 3px 2px 0px rgba(199,199,199,1);
+	-moz-box-shadow: 0px 3px 2px 0px rgba(199,199,199,1);
+	box-shadow: 0px 3px 2px 0px rgba(199,199,199,1);
+	border-radius: 3px;
+	margin-bottom: 15px;
+	overflow: auto;
+}
+
+.body h6{
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.body p{
+	font-size: 12px;
+	font-weight: 200;
+	line-height: 0.5em;
+}
+
+.body a{
+	color: blue;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 12px;
+}
+
+.widget-icon{
+	background: rgba(191, 191, 191, .6);
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.widget-icon .fas{
+	max-width: 50%;
+	font-size: 20px;
+}
+
+.widget-icon-container{
+	display: inline-block;
+}
+
+.widget-title{
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.photo img{
+	width: 33.3%;
+	height: 110px;
+	float: left;
+	display: inline-block;
+	padding: 3px;
+}
+
+/* Main Area color: #2196f3; */
+
+.sub-menu ul{
+	margin: 0;
+	padding: 0;
+}
+
+.sub-menu li{
+	display: inline-block;
+	width: 20%;
+	float: left;
+	text-align: center;
+	border-bottom: 3px solid white;
+	transition: all .5s ease-in-out;
+	cursor: pointer;
+}
+
+
+.sub-menu li:nth-child(5){
+	padding: 10px 0 21px;
+}
+
+.sub-menu li:hover{
+	border-bottom: 3px solid #2196f3;
+	color: #2196f3;
+}
+
+.sub-menu span{
+	display: block;
+	margin-top: 15px;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.sub-menu .fas{
+	font-size: 20px;
+}
+
+.post{
+	padding: 0;
+}
+
+.post-head{
+	padding: 10px;
+}
+
+.post-user-img{
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+
+.post-user-img img{
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+.post-info{
+	display: inline-block;
+	padding-left: 10px;
+	line-height: 0em;
+}
+
+.post-info h5 span{
+	color: #1e88e5;
+}
+
+.post-info p{
+	font-size: 14px;
+	font-weight: 400px;
+	color: #9a9a9a;
+}
+
+.post-img img{
+	width: 100%;
+	height: 400px;
+}
+
+.post-icons .fas{
+	color: #c2c2c2;
+	padding: 15px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.post-icons .fas:hover{
+	color: #1e88e5;
+}
+
+.post-icons .fas span{
+	color: #404040;
+	font-weight: 300;
+}
+
+.left-icons{
+	display: inline-block;
+	text-align: left;
+}
+
+.right-icons{
+	float: right;
+}
+
+.right-icons span{
+	padding: 10px;
+}
+
+.body .post-comment{
+	background-color: rgba(194, 194, 194, .3);
+	padding: 15px;
+	width: 100%;
+}
+
+.post-comment img{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.post-comment-img{
+	float: left;
+	margin-top: 12px;
+}
+
+.post-comment-info{
+	display: inline-block;
+	padding-left: 20px;
+	line-height: 0em;
+}
+
+.post-comment-info h5{
+	color: #1e88e5;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.comment-box{
+	padding: 20px 0;
+}
+
+.comment-box img{
+	float: left;
+	margin-top: 10px;
+}
+
+.comment-box input{
+	margin: 10px 0 0 10px;
+	padding: 10px;
+	width: 80%;
+	border: 0 solid #fff;
+	font-size: 18px;
+}
+
+.comment-box input:focus{
+	outline: none;
+}
+
+.comment-box .fas{
+	font-size: 20px;
+	color: rgba(191, 191, 191, .7);
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+.comment-box .fas:hover{
+	color: #1e88e5;
+}
+
+::placeholder {
+    color: rgba(188, 188, 188, .9);
+}
